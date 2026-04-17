@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samel.dz – Ensemble Femme | Offre Limitée</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- TikTok Pixel -->
+  <script>
+    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._h=ttq._h||{},ttq._h[e]=n,ttq._v=ttq._v||"",ttq._l=ttq._l||{},ttq._l[e]=[],w.setTimeout(function(){var t=d.createElement("script");t.type="text/javascript",t.async=!0,t.src=i+"?sdkid="+e+"&lib="+t;var n=d.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},0)};
+    ttq.load('D7GGMURC77U9HIB0AN40');
+    ttq.page(); // ViewContent – déclenché à chaque visite
+    }(window,document,'ttq');
+  </script>
+  <!-- Fin TikTok Pixel -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brown:   #6B3F1F;
+      --brown-d: #4A2B10;
+      --dark:    #2C1A0E;
+      --light:   #F5EFE6;
+      --gray:    #EDE8DE;
+      --text:    #2C1A0E;
+      --gold:    #C8952A;
+    }
+
+    body { font-family: 'Tajawal', sans-serif; background: #fff; color: var(--text); direction: rtl; }
+
+    /* ── URGENCY BAR ── */
+    .urgency-bar {
+      background: var(--brown);
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.82} }
+
+    /* ── HEADER ── */
+    header {
+      background: #F5EFE6;
+      border-bottom: 2px solid var(--gold);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    header img.logo { height: 56px; object-fit: contain; }
+    header .brand { font-size: 1.6rem; font-weight: 900; color: var(--dark); letter-spacing: 1px; }
+    header .brand span { color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #2C1A0E 0%, #4A2B10 100%);
+      padding: 36px 20px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content:''; position:absolute; inset:0;
+      background: radial-gradient(circle at 60% 40%, rgba(200,149,42,.12) 0%, transparent 60%);
+    }
+    .hero h1 {
+      font-size: clamp(1.6rem, 5vw, 2.6rem);
+      font-weight: 900; color: #fff; line-height: 1.3;
+      margin-bottom: 8px; position: relative;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero .subtitle { color: #ddd; font-size: 1rem; margin-bottom: 24px; position: relative; }
+
+    /* ── COLOR GALLERY ── */
+    .gallery-wrap {
+      max-width: 520px;
+      margin: 0 auto 24px;
+      position: relative;
+    }
+    .main-img-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: #3a2210;
+      position: relative;
+    }
+    .main-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: opacity .3s ease;
+    }
+    .color-label-badge {
+      position: absolute;
+      bottom: 12px; right: 12px;
+      background: rgba(0,0,0,.55);
+      color: #fff;
+      font-size: .82rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+      backdrop-filter: blur(4px);
+    }
+
+    /* Color thumbnails */
+    .color-thumbs {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .color-thumb {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .color-thumb .thumb-img {
+      width: 62px; height: 78px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 3px solid transparent;
+      transition: border-color .2s, transform .15s;
+    }
+    .color-thumb .thumb-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .color-thumb.active .thumb-img { border-color: var(--gold); transform: scale(1.05); }
+    .color-thumb .thumb-name {
+      font-size: .68rem;
+      color: #ccc;
+      font-weight: 600;
+      text-align: center;
+    }
+    .color-thumb.active .thumb-name { color: var(--gold); }
+
+    /* Swatch dot */
+    .swatch-dot {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,.4);
+    }
+
+    /* ── PRICE ── */
+    .price-block {
+      background: rgba(255,255,255,.08);
+      border: 2px solid var(--gold);
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      padding: 16px 32px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    .old-price { color: #aaa; font-size: 1.2rem; text-decoration: line-through; }
+    .new-price { color: var(--gold); font-size: 2.2rem; font-weight: 900; }
+    .new-price small { font-size: 1rem; font-weight: 600; }
+    .badge-save {
+      position: absolute;
+      top: -14px; left: 50%; transform: translateX(-50%);
+      background: var(--brown);
+      color: #fff; font-size: .8rem; font-weight: 800;
+      padding: 4px 14px; border-radius: 20px; white-space: nowrap;
+    }
+
+    /* ── COUNTDOWN ── */
+    .countdown-wrap { display: flex; justify-content: center; gap: 10px; margin: 18px 0 8px; }
+    .cd-box { background: rgba(255,255,255,.1); border-radius: 10px; padding: 10px 16px; text-align: center; min-width: 62px; }
+    .cd-box .num { font-size: 1.8rem; font-weight: 900; color: var(--gold); display: block; }
+    .cd-box .lbl { font-size: .7rem; color: #ccc; display: block; margin-top: 2px; }
+
+    /* ── BENEFITS ── */
+    .benefits { background: var(--light); padding: 36px 20px; }
+    .section-title { text-align: center; font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-bottom: 24px; }
+    .section-title span { color: var(--brown); }
+    .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 600px; margin: 0 auto; }
+    .benefit-card { background: #fff; border-radius: 14px; padding: 18px 14px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+    .benefit-card .icon { font-size: 2rem; margin-bottom: 8px; }
+    .benefit-card h3 { font-size: .95rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .benefit-card p  { font-size: .82rem; color: #777; }
+
+    /* ── PROOF ── */
+    .proof { padding: 36px 20px; background: #fff; }
+    .stars { color: var(--gold); font-size: 1.2rem; margin-bottom: 4px; }
+    .reviews { display: flex; flex-direction: column; gap: 14px; max-width: 600px; margin: 0 auto; }
+    .review-card { background: var(--gray); border-radius: 12px; padding: 16px 18px; }
+    .review-card .reviewer { font-weight: 700; font-size: .9rem; margin-bottom: 6px; color: var(--dark); }
+    .review-card p { font-size: .88rem; color: #555; }
+
+    /* ── ORDER FORM ── */
+    .order-section {
+      background: linear-gradient(135deg, var(--dark), #3a1f08);
+      padding: 40px 20px 70px;
+    }
+    .order-section .section-title { color: #fff; }
+    .order-section .section-title span { color: var(--gold); }
+    .form-card {
+      background: #fff; border-radius: 20px; padding: 28px 22px;
+      max-width: 540px; margin: 0 auto;
+      box-shadow: 0 10px 40px rgba(0,0,0,.35);
+    }
+    .form-header { text-align: center; margin-bottom: 22px; }
+    .form-header h2 { font-size: 1.3rem; font-weight: 900; color: var(--dark); }
+    .form-header p  { font-size: .9rem; color: #888; margin-top: 4px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: .9rem; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .form-group input,
+    .form-group select {
+      width: 100%; padding: 13px 16px;
+      border: 2px solid #eee; border-radius: 10px;
+      font-family: 'Tajawal', sans-serif; font-size: 1rem;
+      color: var(--text); background: #fafafa;
+      transition: border .2s; direction: rtl;
+    }
+    .form-group input:focus, .form-group select:focus {
+      outline: none; border-color: var(--brown); background: #fff;
+    }
+
+    /* Color selector in form */
+    .color-selector {
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .color-opt {
+      display: flex; align-items: center; gap: 8px;
+      padding: 9px 14px;
+      border: 2px solid #ddd; border-radius: 10px;
+      background: #fff; cursor: pointer;
+      font-family: 'Tajawal', sans-serif;
+      font-size: .9rem; font-weight: 600;
+      transition: all .2s;
+    }
+    .color-opt .dot {
+      width: 20px; height: 20px; border-radius: 50%;
+      border: 2px solid rgba(0,0,0,.15); flex-shrink: 0;
+    }
+    .color-opt:hover { border-color: var(--brown); }
+    .color-opt.active { border-color: var(--brown); background: var(--light); font-weight: 800; }
+
+    /* Size grid */
+    .size-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .size-btn {
+      padding: 10px 4px; border: 2px solid #ddd; border-radius: 8px;
+      background: #fff; font-family: 'Tajawal', sans-serif;
+      font-size: .95rem; font-weight: 700; cursor: pointer; transition: all .2s;
+    }
+    .size-btn:hover, .size-btn.active {
+      border-color: var(--brown); background: var(--brown); color: #fff;
+    }
+
+    /* Quantity */
+    .quantity-control { display: flex; align-items: center; gap: 14px; }
+    .qty-btn {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 2px solid var(--brown); background: #fff; color: var(--brown);
+      font-size: 1.3rem; font-weight: 700; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .2s;
+    }
+    .qty-btn:hover { background: var(--brown); color: #fff; }
+    .qty-display { font-size: 1.3rem; font-weight: 800; min-width: 30px; text-align: center; }
+
+    .total-line {
+      background: var(--light); border-radius: 10px; padding: 14px 16px;
+      display: flex; justify-content: space-between; align-items: center; margin: 18px 0;
+    }
+    .total-line span { font-size: 1rem; font-weight: 700; color: var(--dark); }
+    .total-line strong { font-size: 1.4rem; font-weight: 900; color: var(--brown); }
+
+    .btn-order {
+      width: 100%; padding: 18px;
+      background: linear-gradient(135deg, var(--brown), var(--brown-d));
+      color: #fff; border: none; border-radius: 14px;
+      font-family: 'Tajawal', sans-serif; font-size: 1.2rem; font-weight: 900;
+      cursor: pointer; letter-spacing: .5px;
+      transition: transform .15s, box-shadow .15s;
+      box-shadow: 0 6px 20px rgba(107,63,31,.45);
+    }
+    .btn-order:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(107,63,31,.55); }
+    .btn-order:active { transform: translateY(0); }
+
+    .cod-note {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; margin-top: 14px; font-size: .85rem; color: #888;
+    }
+
+    /* ── MODAL ── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.6); z-index: 999;
+      align-items: center; justify-content: center;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal {
+      background: #fff; border-radius: 20px; padding: 36px 28px;
+      max-width: 360px; width: 90%; text-align: center;
+      animation: pop .3s ease;
+    }
+    @keyframes pop { from{transform:scale(.8);opacity:0} to{transform:scale(1);opacity:1} }
+    .modal .check { font-size: 4rem; margin-bottom: 12px; }
+    .modal h2 { font-size: 1.4rem; font-weight: 900; color: var(--dark); margin-bottom: 8px; }
+    .modal p  { font-size: .95rem; color: #666; line-height: 1.6; }
+    .modal .btn-close {
+      margin-top: 20px; padding: 12px 32px;
+      background: var(--brown); color: #fff; border: none;
+      border-radius: 10px; font-family: 'Tajawal', sans-serif;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+    }
+
+    /* ── FOOTER ── */
+    footer { background: var(--dark); color: #aaa; text-align: center; padding: 20px; font-size: .85rem; }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* ── STICKY CTA ── */
+    .sticky-cta {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--brown); padding: 14px 20px;
+      text-align: center; z-index: 100; display: none;
+    }
+    .sticky-cta a { color: #fff; font-size: 1.1rem; font-weight: 800; text-decoration: none; }
+    @media (max-width: 600px) { .sticky-cta { display: block; } }
+  </style>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  🔥 عرض محدود – الكميات محدودة لا تفوّتي الفرصة !
+</div>
+
+<!-- HEADER -->
+<header>
+  <img src="logo.png" alt="Samel.dz" class="logo" />
+  <div class="brand">Samel<span>.dz</span></div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>الطقم النسائي<br/><span>الأكثر مبيعًا</span> في الجزائر</h1>
+  <p class="subtitle">أناقة، راحة وجودة عالية – بسعر لا يُصدّق !</p>
+
+  <!-- GALLERY -->
+  <div class="gallery-wrap">
+    <div class="main-img-wrap">
+      <img id="mainPhoto" src="beige.jpg" alt="Ensemble Samel.dz – Beige" />
+      <div class="color-label-badge" id="mainColorLabel">Beige</div>
+    </div>
+
+    <!-- COLOR THUMBNAILS -->
+    <div class="color-thumbs">
+      <div class="color-thumb active" data-img="beige.jpg" data-name="Beige" onclick="selectColor(this)">
+        <div class="thumb-img"><img src="beige.jpg" alt="Beige" /></div>
+        <span class="thumb-name">Beige</span>
+      </div>
+      <div class="color-thumb" data-img="noir.jpg" data-name="Noir" onclick="selectColor(this)">
+        <div class="thumb-img"><img src="noir.jpg" alt="Noir" /></div>
+        <span class="thumb-name">Noir</span>
+      </div>
+      <div class="color-thumb" data-img="marron.jpg" data-name="Marron Chocolat" onclick="selectColor(this)">
+        <div class="thumb-img"><img src="marron.jpg" alt="Marron Chocolat" /></div>
+        <span class="thumb-name">Marron</span>
+      </div>
+      <div class="color-thumb" data-img="vert.jpg" data-name="Vert" onclick="selectColor(this)">
+        <div class="thumb-img"><img src="vert.jpg" alt="Vert" /></div>
+        <span class="thumb-name">Vert</span>
+      </div>
+      <div class="color-thumb" data-img="blanc.jpg" data-name="Blanc Cassé" onclick="selectColor(this)">
+        <div class="thumb-img"><img src="blanc.jpg" alt="Blanc Cassé" /></div>
+        <span class="thumb-name">Blanc Cassé</span>
+      </div>
+      <div class="color-thumb" data-img="bordeaux.jpg" data-name="Bordeaux" onclick="selectColor(this)">
+        <div class="thumb-img"><img src="bordeaux.jpg" alt="Bordeaux" /></div>
+        <span class="thumb-name">Bordeaux</span>
+      </div>
+      <div class="color-thumb" data-img="camel.jpg" data-name="Camel" onclick="selectColor(this)">
+        <div class="thumb-img"><img src="camel.jpg" alt="Camel" /></div>
+        <span class="thumb-name">Camel</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISCOUNT BADGE -->
+  <div style="margin-bottom:16px;position:relative;">
+    <span style="background:#C8952A;color:#fff;font-size:1.6rem;font-weight:900;padding:10px 28px;border-radius:50px;display:inline-block;letter-spacing:1px;box-shadow:0 4px 18px rgba(200,149,42,.45);">
+      تخفيض <span style="font-size:2rem;">35%</span> ⬇️
+    </span>
+  </div>
+
+  <!-- PRICE -->
+  <div class="price-block">
+    <span class="badge-save">وفّري 1300 دج 🎉</span>
+    <div><div class="old-price">3800 دج</div></div>
+    <div class="new-price">2500 <small>دج</small></div>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-wrap">
+    <div class="cd-box"><span class="num" id="cd-h">02</span><span class="lbl">ساعة</span></div>
+    <div class="cd-box"><span class="num" id="cd-m">59</span><span class="lbl">دقيقة</span></div>
+    <div class="cd-box"><span class="num" id="cd-s">59</span><span class="lbl">ثانية</span></div>
+  </div>
+  <p style="color:#ffd;font-size:.85rem;margin-top:-4px;">⏰ ينتهي العرض قريباً !</p>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <h2 class="section-title">لماذا تختاري <span>Samel.dz</span> ؟</h2>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="icon">👗</div>
+      <h3>جودة عالية</h3>
+      <p>قماش فاخر مريح طوال اليوم</p>
+    </div>
+    <div class="benefit-card">
+      <div class="icon">🚚</div>
+      <h3>توصيل لكل الجزائر</h3>
+      <p>24 – 48 ساعة لباب بيتك</p>
+    </div>
+    <div class="benefit-card">
+      <div class="icon">💳</div>
+      <h3>الدفع عند الاستلام</h3>
+      <p>تدفعي فقط لما تستلمي الطلب</p>
+    </div>
+    <div class="benefit-card">
+      <div class="icon">🔄</div>
+      <h3>إمكانية الإرجاع</h3>
+      <p>في حال أي مشكلة نحن متواجدون</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="proof">
+  <h2 class="section-title">آراء <span>عملاءنا</span> ⭐</h2>
+  <div class="reviews">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <div class="reviewer">سارة م. – وهران</div>
+      <p>والله الطقم جاء رائع، القماش ناعم جداً وحجمي جاء زين. الباكيج كان مرتب ونظيف ⭐</p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <div class="reviewer">إيمان ك. – الجزائر العاصمة</div>
+      <p>طلبت بالكود وجاء في ظرف يومين، لبيته وكل الناس عجبهم 😍 شكراً Samel.dz</p>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★☆</div>
+      <div class="reviewer">نور الهدى ب. – قسنطينة</div>
+      <p>السعر والجودة ماشيين مع بعضهم. حتكمل طلب ثاني إن شاء الله 🙏</p>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="order-section" id="order">
+  <h2 class="section-title" style="color:#fff">اطلبي <span>الآن</span> واستقبليه ببيتك 📦</h2>
+  <div class="form-card">
+    <div class="form-header">
+      <h2>📋 نموذج الطلب</h2>
+      <p>أكملي بياناتك ونتواصل معك لتأكيد الطلب</p>
+    </div>
+
+    <form id="orderForm" novalidate>
+
+      <div class="form-group">
+        <label for="fname">الاسم الكامل *</label>
+        <input type="text" id="fname" placeholder="مثال : فاطمة بن علي" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">رقم الهاتف *</label>
+        <input type="tel" id="phone" placeholder="0555 00 00 00" required inputmode="tel" />
+      </div>
+
+      <div class="form-group">
+        <label for="wilaya">الولاية *</label>
+        <select id="wilaya" required>
+          <option value="">— اختاري ولايتك —</option>
+          <option>01 - أدرار</option><option>02 - الشلف</option><option>03 - الأغواط</option>
+          <option>04 - أم البواقي</option><option>05 - باتنة</option><option>06 - بجاية</option>
+          <option>07 - بسكرة</option><option>08 - بشار</option><option>09 - البليدة</option>
+          <option>10 - البويرة</option><option>11 - تمنراست</option><option>12 - تبسة</option>
+          <option>13 - تلمسان</option><option>14 - تيارت</option><option>15 - تيزي وزو</option>
+          <option>16 - الجزائر العاصمة</option><option>17 - الجلفة</option><option>18 - جيجل</option>
+          <option>19 - سطيف</option><option>20 - سعيدة</option><option>21 - سكيكدة</option>
+          <option>22 - سيدي بلعباس</option><option>23 - عنابة</option><option>24 - قالمة</option>
+          <option>25 - قسنطينة</option><option>26 - المدية</option><option>27 - مستغانم</option>
+          <option>28 - المسيلة</option><option>29 - معسكر</option><option>30 - ورقلة</option>
+          <option>31 - وهران</option><option>32 - البيض</option><option>33 - إليزي</option>
+          <option>34 - برج بوعريريج</option><option>35 - بومرداس</option><option>36 - الطارف</option>
+          <option>37 - تندوف</option><option>38 - تيسمسيلت</option><option>39 - الوادي</option>
+          <option>40 - خنشلة</option><option>41 - سوق أهراس</option><option>42 - تيبازة</option>
+          <option>43 - ميلة</option><option>44 - عين الدفلى</option><option>45 - النعامة</option>
+          <option>46 - عين تموشنت</option><option>47 - غرداية</option><option>48 - غليزان</option>
+          <option>49 - تيميمون</option><option>50 - برج باجي مختار</option>
+          <option>51 - أولاد جلال</option><option>52 - بني عباس</option><option>53 - عين صالح</option>
+          <option>54 - عين قزام</option><option>55 - تقرت</option><option>56 - جانت</option>
+          <option>57 - المغير</option><option>58 - المنيعة</option>
+        </select>
+      </div>
+
+      <!-- COLOR SELECTOR -->
+      <div class="form-group">
+        <label>اللون *</label>
+        <div class="color-selector" id="colorSelector">
+          <button type="button" class="color-opt active" data-color="Beige">
+            <span class="dot" style="background:#D4B896;"></span> Beige
+          </button>
+          <button type="button" class="color-opt" data-color="Noir">
+            <span class="dot" style="background:#1A1A1A;"></span> Noir
+          </button>
+          <button type="button" class="color-opt" data-color="Marron Chocolat">
+            <span class="dot" style="background:#3D1F0D;"></span> Marron Chocolat
+          </button>
+          <button type="button" class="color-opt" data-color="Vert">
+            <span class="dot" style="background:#2D5A3D;"></span> Vert
+          </button>
+          <button type="button" class="color-opt" data-color="Blanc Cassé">
+            <span class="dot" style="background:#F0EBE0; border:2px solid #ccc;"></span> Blanc Cassé
+          </button>
+          <button type="button" class="color-opt" data-color="Bordeaux">
+            <span class="dot" style="background:#6B1A2A;"></span> Bordeaux
+          </button>
+          <button type="button" class="color-opt" data-color="Camel">
+            <span class="dot" style="background:#B8865A;"></span> Camel
+          </button>
+        </div>
+        <input type="hidden" id="selectedColor" value="Beige" />
+      </div>
+
+      <!-- SIZE -->
+      <div class="form-group">
+        <label>المقاس *</label>
+        <div class="size-grid" id="sizeGrid">
+          <button type="button" class="size-btn" data-size="S">S</button>
+          <button type="button" class="size-btn" data-size="M">M</button>
+          <button type="button" class="size-btn" data-size="L">L</button>
+          <button type="button" class="size-btn" data-size="XL">XL</button>
+          <button type="button" class="size-btn" data-size="XXL">XXL</button>
+          <button type="button" class="size-btn" data-size="3XL">3XL</button>
+        </div>
+        <input type="hidden" id="selectedSize" />
+      </div>
+
+      <!-- QUANTITY -->
+      <div class="form-group">
+        <label>الكمية</label>
+        <div class="quantity-control">
+          <button type="button" class="qty-btn" id="qtyMinus">−</button>
+          <span class="qty-display" id="qtyDisplay">1</span>
+          <button type="button" class="qty-btn" id="qtyPlus">+</button>
+        </div>
+      </div>
+
+      <!-- TOTAL -->
+      <div style="background:var(--light);border-radius:10px;padding:14px 16px;margin:18px 0;display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:.9rem;color:#666;">
+          <span>سعر المنتج :</span>
+          <span id="subPrice">2500 دج</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:.9rem;color:#666;">
+          <span>🚚 التوصيل (كل الولايات) :</span>
+          <span>500 دج</span>
+        </div>
+        <div style="border-top:1px solid #ddd;margin-top:4px;padding-top:8px;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:1rem;font-weight:700;color:var(--dark);">المجموع الكلي :</span>
+          <strong id="totalPrice" style="font-size:1.4rem;font-weight:900;color:var(--brown);">3000 دج</strong>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-order">
+        🛒 اطلبي الآن – الدفع عند الاستلام
+      </button>
+
+      <p class="cod-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        معلوماتك آمنة ومحمية – الدفع عند الاستلام فقط
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <strong style="color:#fff">Samel.dz</strong> – جميع الحقوق محفوظة</p>
+  <p style="margin-top:6px">للتواصل : <a href="tel:+213784323036" dir="ltr" style="unicode-bidi:plaintext;">0784 32 30 36</a></p>
+</footer>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <a href="#order">🛒 اطلبي الآن – 2500 دج فقط</a>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal">
+    <div class="check">✅</div>
+    <h2>تم استلام طلبك !</h2>
+    <p>شكراً لك 💖<br/>سنتواصل معك خلال <strong>24 ساعة</strong> لتأكيد الطلب والتوصيل.</p>
+    <button class="btn-close" onclick="document.getElementById('successModal').classList.remove('show')">
+      حسناً، شكراً
+    </button>
+  </div>
+</div>
+
+<script>
+  /* ── COUNTDOWN ── */
+  (function () {
+    let total = 2 * 3600 + 59 * 60 + 59;
+    const h = document.getElementById('cd-h');
+    const m = document.getElementById('cd-m');
+    const s = document.getElementById('cd-s');
+    setInterval(() => {
+      if (total <= 0) return;
+      total--;
+      h.textContent = String(Math.floor(total / 3600)).padStart(2, '0');
+      m.textContent = String(Math.floor((total % 3600) / 60)).padStart(2, '0');
+      s.textContent = String(total % 60).padStart(2, '0');
+    }, 1000);
+  })();
+
+  /* ── COLOR GALLERY (hero thumbnails) ── */
+  function selectColor(thumb) {
+    document.querySelectorAll('.color-thumb').forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+    const img   = thumb.dataset.img;
+    const name  = thumb.dataset.name;
+    document.getElementById('mainPhoto').src = img;
+    document.getElementById('mainPhoto').alt = 'Ensemble Samel.dz – ' + name;
+    document.getElementById('mainColorLabel').textContent = name;
+
+    // Sync form color selector
+    document.querySelectorAll('.color-opt').forEach(opt => {
+      opt.classList.toggle('active', opt.dataset.color === name);
+    });
+    document.getElementById('selectedColor').value = name;
+  }
+
+  /* ── COLOR SELECTOR (form) ── */
+  document.querySelectorAll('.color-opt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.color-opt').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const color = btn.dataset.color;
+      document.getElementById('selectedColor').value = color;
+
+      // Sync gallery thumbnail
+      const colorMap = { 'Beige':'beige.jpg','Noir':'noir.jpg','Marron Chocolat':'marron.jpg','Vert':'vert.jpg','Blanc Cassé':'blanc.jpg','Bordeaux':'bordeaux.jpg','Camel':'camel.jpg' };
+      const img = colorMap[color];
+      if (img) {
+        document.getElementById('mainPhoto').src = img;
+        document.getElementById('mainColorLabel').textContent = color;
+        document.querySelectorAll('.color-thumb').forEach(t => t.classList.toggle('active', t.dataset.img === img));
+      }
+    });
+  });
+
+  /* ── SIZE SELECTOR ── */
+  document.querySelectorAll('.size-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('selectedSize').value = btn.dataset.size;
+    });
+  });
+
+  /* ── QUANTITY ── */
+  let qty = 1;
+  const UNIT_PRICE = 2500;
+  const LIVRAISON = 500;
+  function updateTotal() {
+    document.getElementById('qtyDisplay').textContent = qty;
+    const sub = qty * UNIT_PRICE;
+    document.getElementById('subPrice').textContent = sub.toLocaleString('fr-DZ') + ' دج';
+    document.getElementById('totalPrice').textContent = (sub + LIVRAISON).toLocaleString('fr-DZ') + ' دج';
+  }
+  document.getElementById('qtyMinus').addEventListener('click', () => { if (qty > 1) { qty--; updateTotal(); } });
+  document.getElementById('qtyPlus').addEventListener('click', () => { if (qty < 10) { qty++; updateTotal(); } });
+
+  /* ── FORM SUBMIT ── */
+  document.getElementById('orderForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const fname   = document.getElementById('fname').value.trim();
+    const phone   = document.getElementById('phone').value.trim();
+    const wilaya  = document.getElementById('wilaya').value;
+    const color   = document.getElementById('selectedColor').value;
+    const size    = document.getElementById('selectedSize').value;
+
+    if (!fname || !phone || !wilaya) {
+      alert('الرجاء ملء جميع الحقول المطلوبة ⚠️'); return;
+    }
+    if (!color) { alert('الرجاء اختيار اللون 🎨'); return; }
+    if (!size)  { alert('الرجاء اختيار المقاس 👗'); return; }
+    const phoneRegex = /^(05|06|07)[0-9]{8}$/;
+    if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
+      alert('رقم الهاتف غير صحيح. مثال: 0555123456'); return;
+    }
+
+    fetch('https://script.google.com/macros/s/AKfycbxXIItGyOLp1hfy4jgfets9jujYLOcLm_knoeCTSk8Yae-ppaot9RmNFzEgsFtzNW-8ag/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fname:    fname,
+        phone:    phone,
+        wilaya:   wilaya,
+        color:    color,
+        size:     size,
+        qty:      qty,
+        subtotal: qty * UNIT_PRICE,
+        total:    qty * UNIT_PRICE + LIVRAISON
+      })
+    });
+
+    // TikTok Pixel – Purchase
+    ttq.track('PlaceAnOrder', {
+      value:    qty * UNIT_PRICE + LIVRAISON,
+      currency: 'DZD',
+      contents: [{ content_id: 'ensemble-femme-samel', content_name: 'Ensemble Femme Samel.dz', quantity: qty }]
+    });
+
+    document.getElementById('successModal').classList.add('show');
+    this.reset();
+    document.querySelectorAll('.size-btn, .color-opt').forEach(b => b.classList.remove('active'));
+    qty = 1; updateTotal();
+  });
+</script>
+</body>
+</html>
